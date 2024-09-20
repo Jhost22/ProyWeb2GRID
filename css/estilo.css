@@ -1,0 +1,74 @@
+.contenedor
+{
+    background-color: aquamarine;
+    padding: 10px;
+    font-size: 23px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+
+    grid-template-areas: "header header header"
+                          "nav nav nav"
+                          "section section ads"
+                          "footer footer footer"                  ;
+}
+.contenedor .header{
+    background-color: green;
+    grid-column: header;
+}
+.contenedor .nav{
+    background-color: darkblue;
+    grid-column: nav;
+}
+.contenedor .section{
+    background-color: coral;
+    grid-column: section;
+    justify-content:center;
+    align-items:center;
+    flex-direction: row;
+    display: flex;
+    flex-wrap:wrap;
+}
+.contenedor .ads{
+    background-color:rebeccapurple;
+    grid-column: ads;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenedor .footer{
+    background-color: darkturquoise;
+    grid-column: footer;
+}
+.contenedor .ads .p1{
+    background-color: blue;
+    height: 20%;
+    width: 80%;
+    align-items:center;
+    display: flex;
+}
+.contenedor .ads .p2{
+    background-color: rgb(9, 128, 0);
+    height:20%;
+    width: 80%;
+    align-items:center;
+    display: flex;
+}
+.contenedor .section .d1{
+    background-color: darkseagreen;
+    display:flex;
+    justify-content:center;
+    width:50%;
+    height: 100%;
+}
+.contenedor .section .d2{
+    background-color: darkseagreen;
+    display:flex;
+    justify-content:center;
+    width:50%;
+    height: 100%;
+}
